@@ -1,15 +1,15 @@
 This application has the following components:
 - Node.js server that loads GTFS and exposes an API with the subway stops.
-- Frontend App developed using React framework that shows all the stops on a map.
+- Frontend App that shows all the stops on a map (developed using React framework).
 
 To start the application, run (in project directory):
 
-### `yarn start`
+# `yarn start`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-Server listens to http://localhost:3001
-App proxy to link client/server
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br>
+Server listens to http://localhost:3001<br>
+A proxy is configured to link client/server.
 
 ## Folder Structure
 ```
@@ -42,8 +42,9 @@ react/
   start-client.js
 ```
 
-Files
+Files & Folders
 * `server.js`: Nodejs server.
-* `start-client.js`: script to run client and be able to run client/server at the same time.
+* `mapp/`: Client.
+* `start-client.js`: script to run the client and be able to run client/server at the same time.
 * `public/index.html`: page template;
 * `src/index.js`: JavaScript entry point.
