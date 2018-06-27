@@ -6,8 +6,7 @@ To start the application, run (in project directory):
 
 # `yarn start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br>
+Open http://localhost:3000 to view it in the browser.<br>
 Server listens to http://localhost:3001<br>
 A proxy is configured to link client/server.<br>
 The web app has been successfully tested in Chrome and Firefox.
