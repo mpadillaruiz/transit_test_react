@@ -54,7 +54,7 @@ Files & Folders
 * `mapapp/`: Client.
 * `mapapp/public/index.html`: page template;
 * `mapapp/src/index.js`: JavaScript entry point.
-* `mapapp/src/App.js`: Script app;
-* `mapapp/src/App.css`: css app;
-* `mapapp/src/components/Map.js`: Map component;
-* `mapapp/src/markerstyle.js`: css clustering;
+* `mapapp/src/App.js`: Script app.
+* `mapapp/src/App.css`: css app.
+* `mapapp/src/components/Map.js`: Map component.
+* `mapapp/src/markerstyle.css`: css clustering.
