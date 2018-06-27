@@ -9,7 +9,8 @@ To start the application, run (in project directory):
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br>
 Server listens to http://localhost:3001<br>
-A proxy is configured to link client/server.
+A proxy is configured to link client/server.<br>
+The web app has been successfully tested in Chrome and Firefox.
 
 ## Folder Structure
 ```
@@ -44,7 +45,11 @@ react/
 
 Files & Folders
 * `server.js`: Nodejs server.
-* `mapp/`: Client.
 * `start-client.js`: script to run the client and be able to run client/server at the same time.
-* `public/index.html`: page template;
-* `src/index.js`: JavaScript entry point.
+* `mapapp/`: Client.
+* `mapapp/public/index.html`: page template;
+* `mapapp/src/index.js`: JavaScript entry point.
+* `mapapp/src/App.js`: Script app;
+* `mapapp/src/App.css`: css app;
+* `mapapp/src/components/Map.js`: Map component;
+* `mapapp/src/markerstyle.js`: css clustering;

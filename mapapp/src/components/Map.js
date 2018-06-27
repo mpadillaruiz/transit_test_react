@@ -23,7 +23,7 @@ class Map extends React.Component {
     });
 
     //Add basemaps
-    //Customized Mapbox map to delete train stations
+    //Customized Mapbox map without train stations and customized colors
     L.tileLayer('https://api.mapbox.com/styles/v1/mpadillaruiz/cjiv6fgvn4rs72so4mzo3vh74/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXBhZGlsbGFydWl6IiwiYSI6IjVNdEo5ZHcifQ.hOJnD_xBxWNwY0YoK978wg', {
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
@@ -31,7 +31,7 @@ class Map extends React.Component {
                       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
     }).addTo(this.map);
 
-    //OpenRailWayMap to include subway lines as base map
+    //OpenRailWayMap to include subway lines as basemap
     L.tileLayer("http://{s}.tiles.openrailwaymap.org/signals/{z}/{x}/{y}.png", {
         opacity: 0.9,
         minZoom:13
@@ -44,11 +44,12 @@ class Map extends React.Component {
         polygonOptions:{ weight: 3, color: '#222', opacity: 0.5 }
     });
 
+    //Add layer to map
     this.map.addLayer(this.markersCluster);
 
     //Legend component to add to the map
     this.legend = L.control({position: 'bottomright'});
-
+    //Event triggered when adding the legend
     this.legend.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'info legend');
         //Adding subway lines
@@ -57,7 +58,7 @@ class Map extends React.Component {
         div.innerHTML +='<img src="assets/images/icon.png" alt="subway" height="20" width="20"><span>Subway Stop</span><br>';
         return div;
     };
-
+    //Add legend to map
     this.legend.addTo(this.map);
 
     //Icon representing a subway stop
