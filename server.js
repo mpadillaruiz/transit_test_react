@@ -50,7 +50,10 @@ function processFile(data){
     //Variable to store file header
     let header=[];
     //Split each line of the file
-    let lines = data.split("\r\n");
+	let lines = data.split("\n");
+	//When you upload the data to github (or when you download it), it looks like it eliminates the \r.
+	//If you load the data locally, there is a \r before the \n so you can use this statement
+	//let lines = data.split("\r\n");
 
     //Going through all the lines of the file
     for (let i = 0; i<lines.length; i++) {
