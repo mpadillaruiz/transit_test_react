@@ -8,7 +8,7 @@ and mapapp for react app).
 # `yarn install`
 # `cd to mapapp and yarn install`
 
-Then, in project directory run and both server/client will start:
+Then, in project directory run 'yarn start' and both server/client will start:
 
 # `yarn start`
 
