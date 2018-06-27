@@ -2,7 +2,13 @@ This application has the following components:
 - Node.js server that loads GTFS and exposes an API with the subway stops.
 - Frontend App that shows all the stops on a map (developed using React framework).
 
-To start the application, run (in project directory):
+To start the application, you need to build the dependencies in both directories (main one for server,<br>
+and mapapp for react app).
+
+# `yarn install`
+# `cd to mapapp and yarn install`
+
+Then, in project directory run and both server/client will start:
 
 # `yarn start`
 
